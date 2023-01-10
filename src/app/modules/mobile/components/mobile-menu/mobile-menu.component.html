@@ -1,0 +1,39 @@
+<nav>
+    <ul class="menu-list">
+        <li class="burger" (click)="toggleMenu()">
+            <i class="material-icons"> {{isMenuOpen ? "close": "menu"}} </i>
+        </li>
+
+        <li class="logotype">
+            <a routerLink="/">
+                <img ngSrc="./assets/images/logos/logo_fullstore_mobile.png" alt="Logo Full Store" width="36"
+                    height="45">
+            </a>
+        </li>
+
+        <li class="menu" [class.is-open]="isMenuOpen" (click)="toggleMenu()">
+            <a class="menu-item" routerLink="/">Home</a>
+            <mat-divider></mat-divider>
+            <a class="menu-item" routerLink="/">Categories</a>
+            <mat-divider></mat-divider>
+            <a class="menu-item" routerLink="/">Shop</a>
+            <mat-divider></mat-divider>
+            <a class="menu-item" routerLink="/">Account</a>
+            <mat-divider></mat-divider>
+            <a class="menu-item" routerLink="/site/about-us">About Us</a>
+            <mat-divider></mat-divider>
+            <a class="menu-item" routerLink="/site/contact-us">Contact</a>
+            <mat-divider></mat-divider>
+        </li>
+
+        <li class="menu-button">
+            <span class="example-spacer"></span>
+            <button mat-icon-button class="example-icon favorite-icon">
+                <mat-icon>search</mat-icon>
+            </button>
+            <button mat-icon-button class="example-icon">
+                <mat-icon>shopping_cart</mat-icon>
+            </button>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,14 @@
+.block-banner {
+  margin: 0 10px;
+  margin-bottom: 40px;
+  .block-banner_body {
+    position: relative;
+    display: block;
+    height: 375px;
+
+    .block-banner_image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

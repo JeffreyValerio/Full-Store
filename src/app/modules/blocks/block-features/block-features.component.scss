@@ -1,0 +1,21 @@
+.block-features {
+  margin-bottom: 40px;
+  .block-features_item {
+    margin: 5px 10px;
+    // display: flex;
+    // padding: 10px;
+
+    h4 {
+      padding-bottom: 4px;
+    }
+    p {
+      color: #aaa;
+      font-size: 0.8em;
+    }
+
+    .card-title-group {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

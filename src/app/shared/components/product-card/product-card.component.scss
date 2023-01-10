@@ -1,0 +1,23 @@
+.product-card {
+  .card-content {
+    padding: 0 10px;
+    margin-top: 20px;
+    p {
+      margin-top: 20px;
+    }
+
+    .product-card_rating {
+      align-items: center;
+      display: flex;
+    }
+  }
+  .card-actions {
+    button {
+      background-color: #abc;
+      border: none;
+      padding: 5px 10px;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+}

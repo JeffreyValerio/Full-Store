@@ -7,7 +7,19 @@ const routes: Routes = [
   {
     path: '',
     component: RootComponent,
-    children: [{ path: '', component: HomePageComponent }],
+    children: [
+      { path: '', component: HomePageComponent },
+      {
+        path: 'site',
+        loadChildren: () =>
+          import('./modules/site/site.module').then((m) => m.SiteModule),
+      },
+      {
+        path: 'shop',
+        loadChildren: () =>
+          import('./modules/shop/shop.module').then((m) => m.ShopModule),
+      },
+    ],
   },
 ];
 
